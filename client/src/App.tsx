@@ -4,11 +4,10 @@ import './App.css';
 
 class App extends React.Component {
 	async componentDidMount() {
-		console.log('start fetching articles');
 		const response = await fetch('/articles');
 		const body = await response.json();
 
-		console.log(body);
+		console.log('body:', body);
 	}
 
 	render() {

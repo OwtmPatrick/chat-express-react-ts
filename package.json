@@ -1,10 +1,11 @@
 {
-	"name": "science-express-ts",
+	"name": "chat-express-react-ts",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon index.js",
 		"start": "npm install && node index.js",
 		"heroku-postbuild": "cd client && npm install && npm run build"
 	},
@@ -12,5 +13,8 @@
 	"license": "ISC",
 	"dependencies": {
 		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15"
 	}
 }
