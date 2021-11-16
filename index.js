@@ -6,7 +6,7 @@ const path = require('path');
 app.use(express.static(path.join(__dirname, './client/build')));
 
 app.get('/articles', (req, res) => {
-	res.send({articles: [{name: 'first article'}]});
+	res.send({articles: [{name: 'first article'}, {name: 'one more article'}]});
 });
 
 // app.get('*', (req, res) => {
