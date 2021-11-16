@@ -4,7 +4,7 @@ import './App.css';
 
 class App extends React.Component {
 	async componentDidMount() {
-		// console.log('test');
+		console.log('start fetching articles');
 		const response = await fetch('/articles');
 		const body = await response.json();
 
